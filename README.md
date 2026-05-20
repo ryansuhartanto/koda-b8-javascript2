@@ -46,7 +46,7 @@ start-->data
 
 -->loop-1-->loop-2
 
-loop-2--true
+loop-2--true-->check
 -->check-min--true-->min
 -->check-max--true-->max
 -->total
