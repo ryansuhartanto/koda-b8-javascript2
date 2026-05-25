@@ -5,7 +5,7 @@
 	"description": "",
 	"license": "MIT",
 	"author": "Ryan Suhartanto <suhartanto@kekkon.nexus>",
-	"repository": "ryans]uhartanto/koda-b8-javascript2",
+	"repository": "ryansuhartanto/koda-b8-javascript2",
 	"type": "module",
 	"module": "src/index.js",
 	"scripts": {
