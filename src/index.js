@@ -1,35 +1,7 @@
-function main(data) {
-	if (!Array.isArray(data) || data.length === 0) {
-		throw new Error("data harus berupa array dan tidak boleh kosong");
-	}
+import { calculate } from "./utils";
 
-	let min = data[0];
-	let max = data[0];
-	let total = data[0];
+const [min, max, avg] = calculate([2, 4, 6, 8]);
 
-	for (let i = 1; i < data.length; i++) {
-		const check = data[i];
-
-		if (typeof check !== "number") {
-			throw new Error("data harus berisi number");
-		}
-
-		if (check < min) {
-			min = check;
-		}
-		if (check > max) {
-			max = check;
-		}
-
-		total += check;
-	}
-
-	const avg = total / data.length;
-
-	console.log(`Min: ${min}`);
-	console.log(`Max: ${max}`);
-	console.log(`Avg: ${avg}`);
-}
-
-// main([2, 4, 6, 8]);
-main([0, 1, "s"]);
+console.log(`Min: ${min}`);
+console.log(`Max: ${max}`);
+console.log(`Avg: ${avg}`);
