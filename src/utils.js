@@ -1,3 +1,8 @@
+/**
+ * Calculates the mininum, maximum, and average of the provided numbers in one batch.
+ * @param {number[]} data Array of numbers
+ * @returns {[number, number, number]} `[mininum, maximum, average]`
+ */
 export function calculate(data) {
 	if (!Array.isArray(data) || data.length === 0) {
 		throw new Error("data harus berupa array dan tidak boleh kosong");
