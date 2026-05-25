@@ -26,7 +26,5 @@ export function calculate(data) {
 
 	const avg = total / data.length;
 
-	console.log(`Min: ${min}`);
-	console.log(`Max: ${max}`);
-	console.log(`Avg: ${avg}`);
+	return [min, max, avg];
 }
