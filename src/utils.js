@@ -1,6 +1,7 @@
 /**
  * Calculates the mininum, maximum, and average of the provided numbers in one batch.
  * @param {number[]} data Array of numbers
+ * @throws if data doesn't contains numbers
  * @returns {[number, number, number]} `[mininum, maximum, average]`
  */
 export function calculate(data) {
